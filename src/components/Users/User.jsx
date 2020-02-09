@@ -24,25 +24,8 @@ let User = ({user, followingInProgress, unfollow, follow, ...props}) => {
                     {user.followed
                         ? <button disabled={followingInProgress.some(id => id === user.id)} onClick={() => {
                             unfollow(user.id);
-                            // usersAPI.unfollow(u.id).then(data => {
-                            //     if(data.resultCode == 0) {
-                            //         props.unfollow(u.id);
-                            //     }
-                            //     props.toggleFollowingProgress(false, u.id);
-                            // })
-
-                            // axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {
-                            //     withCredentials: true,
-                            //     headers: {
-                            //         "API-KEY": "b2de6c08-33b5-4aa7-b1b9-f605b1978dd4"
-                            //     }
-                            // }).then(response => {
-                            //     if(response.data.resultCode == 0) {
-                            //         props.unfollow(u.id)
-                            //     }
-                            // })
-
                         }}>Unfollow</button>
+                        
                         : <button disabled={followingInProgress.some(id => id === user.id)} onClick={() => {
                             follow(user.id) 
                         }}>Follow</button>}

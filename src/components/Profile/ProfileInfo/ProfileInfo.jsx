@@ -35,8 +35,6 @@ const ProfileInfo = React.memo(({profile, status, updateStatus, isOwner, savePho
         
         {editMode ? <ProfileDataForm initialValues={profile} profile={profile} status={status} updateStatus={updateStatus} onSubmit={onSubmit} />
         : <ProfileData profile={profile} status={status} updateStatus={updateStatus} isOwner={isOwner} goToEditMode={() => {setEditMode(true)}} /> }
-
-        {/* <ProfileStatusWithHook status={props.status} updateStatus={props.updateStatus} /> */}
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react';
 import Profile from './Profile';
 import { connect } from 'react-redux';
 import { setUserProfile, getStatus, updateStatus, savePhoto, saveProfile } from '../../redux/propfileReduser';
-import { withRouter, Redirect } from 'react-router-dom';
+import { withRouter, } from 'react-router-dom';
 import { compose } from 'redux';
 import { getProfile,
         getIsAuth,
@@ -26,7 +26,7 @@ class ProfileContainer extends React.Component {
         this.props.getStatus(userId);
     }
 
-    componentDidMount() { // componentDidMount срабатывает когда меняется либо state либо props
+    componentDidMount() {
         this.refreshProfile()
     }
 
@@ -37,7 +37,6 @@ class ProfileContainer extends React.Component {
     }
 
     render() {
-        // debugger
         return(
             <div>
                 <Profile {...this.props} profile={this.props.profile}
@@ -50,14 +49,6 @@ class ProfileContainer extends React.Component {
     }
 }
 
-// Это НОС
-// let AuthRedirectComponent = withAuthRedirect(ProfileContainer);
-
-//     (props) => {
-//     if(!props.isAuth) return <Redirect to={"/login"} />
-//     return <ProfileContainer {...props} />
-// }
-
 let mapStateToProps = (state) => {
     return {
         profile: getProfile(state),
@@ -67,8 +58,6 @@ let mapStateToProps = (state) => {
     }
 }
 
-// let WithUrlDataContainerComponent = withRouter(AuthRedirectComponent)
-
 export default compose(
     connect(mapStateToProps, {
         setUserProfile,
@@ -77,10 +66,5 @@ export default compose(
         savePhoto,
         saveProfile
     }),
-    withRouter,
-    // withAuthRedirect
+    withRouter
 )(ProfileContainer);
-
-// export default connect(mapStateToProps, {
-//     setUserProfile
-// })(WithUrlDataContainerComponent);

@@ -18,7 +18,7 @@ const LoginForm = ({handleSubmit, error, captchaUrl}) => {
                 <Field placeholder={"Email"} name={"email"} component={Input} validate={[required]} />
             </div>
             <div>
-                <Field placeholder={"Password"} name={"password"} component={Input} validate={[required]} />
+                <Field placeholder={"Password"} name={"password"} type={"password"} component={Input} validate={[required]} />
             </div>
             <div>
                 <Field component={Input} name={"rememberMe"} type={"checkbox"} /> Remember me
@@ -40,7 +40,7 @@ const LoginForm = ({handleSubmit, error, captchaUrl}) => {
 };
 
 const LoginReduxForm = reduxForm({
-    form: 'login' // Этот form ни как не относится к тому форму который в стэйте. Это просто настройки
+    form: 'login'
 })(LoginForm);
 
 const Login = (props) => {

@@ -1,17 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import './App.css';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Navbar from './components/Navbar/Navbar';
-// import ProfileContainer from './components/Profile/ProfileContainer';
-// import DialogsContainer from './components/Dialogs/DialogsContainer';
-import News from './components/News/News';
-import Music from './components/Music/Music';
-import Settings from './components/Settings/Settings';
-import Friends from './components/Friends/Friends';
 import UsersContainer from './components/Users/UsersContainer';
 import Login from './components/Login/Login';
-import GallaryContainer from './components/Gallary/GallaryContainer';
-import { HashRouter, BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { initializeApp } from './redux/appReduser';
@@ -49,7 +42,6 @@ class App extends React.Component {
         <Navbar />
         <div className="app-wrapper-content">
           <Switch>
-            {/* <Route exact path="/" render={withSuspens(ProfileContainer)} /> Можно сделать так, но так будет две одинаковых страницы на разных урлах */} 
             <Route exact path="/" render={() => {return <Redirect to={"/profile"} />}} />
             <Route path="/profile/:userId?" render={withSuspens(ProfileContainer)} />
             <Route path="/dialogs" render={withSuspens(DialogsContainer)} />
@@ -70,10 +62,10 @@ const mapStateToProps = (state) => ({
 
 let AppContainer = compose(
   withRouter,
-  connect( mapStateToProps, { initializeApp } ) //привести в порядок
+  connect( mapStateToProps, { initializeApp } )
 )(App);
 
-const SamuraiJSApp = (props) => { // 99 lesson 16:38
+const SamuraiJSApp = (props) => {
   return(
     <HashRouter>
       <Provider store={store}>
