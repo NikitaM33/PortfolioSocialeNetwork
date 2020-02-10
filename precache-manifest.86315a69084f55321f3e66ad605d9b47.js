@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d44da1f0a03433b572ece083f8329f3",
+    "revision": "b4724e351a9c316a500759b6be164f19",
     "url": "/PortfolioSocialeNetwork/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioSocialeNetwork/static/css/4.2ed7032e.chunk.css"
   },
   {
-    "revision": "3b68d236866ad6ef26f4",
+    "revision": "4e357edf0422ee9054b9",
     "url": "/PortfolioSocialeNetwork/static/css/main.1317f50f.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioSocialeNetwork/static/js/4.0264b06b.chunk.js"
   },
   {
-    "revision": "3b68d236866ad6ef26f4",
-    "url": "/PortfolioSocialeNetwork/static/js/main.cd56ffa0.chunk.js"
+    "revision": "4e357edf0422ee9054b9",
+    "url": "/PortfolioSocialeNetwork/static/js/main.cad10a19.chunk.js"
   },
   {
     "revision": "d87e85ddbb09bf048d42",
