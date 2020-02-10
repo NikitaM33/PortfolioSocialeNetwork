@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PortfolioSocialeNetwork/static/css/main.1317f50f.chunk.css",
-    "main.js": "/PortfolioSocialeNetwork/static/js/main.cad10a19.chunk.js",
-    "main.js.map": "/PortfolioSocialeNetwork/static/js/main.cad10a19.chunk.js.map",
+    "main.js": "/PortfolioSocialeNetwork/static/js/main.cd56ffa0.chunk.js",
+    "main.js.map": "/PortfolioSocialeNetwork/static/js/main.cd56ffa0.chunk.js.map",
     "runtime-main.js": "/PortfolioSocialeNetwork/static/js/runtime-main.53bbf036.js",
     "runtime-main.js.map": "/PortfolioSocialeNetwork/static/js/runtime-main.53bbf036.js.map",
     "static/js/2.ddc3f074.chunk.js": "/PortfolioSocialeNetwork/static/js/2.ddc3f074.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/4.0264b06b.chunk.js": "/PortfolioSocialeNetwork/static/js/4.0264b06b.chunk.js",
     "static/js/4.0264b06b.chunk.js.map": "/PortfolioSocialeNetwork/static/js/4.0264b06b.chunk.js.map",
     "index.html": "/PortfolioSocialeNetwork/index.html",
-    "precache-manifest.86315a69084f55321f3e66ad605d9b47.js": "/PortfolioSocialeNetwork/precache-manifest.86315a69084f55321f3e66ad605d9b47.js",
+    "precache-manifest.95dfb5c7bfb332a80caabe68f7bd7bc2.js": "/PortfolioSocialeNetwork/precache-manifest.95dfb5c7bfb332a80caabe68f7bd7bc2.js",
     "service-worker.js": "/PortfolioSocialeNetwork/service-worker.js",
     "static/css/3.fbc4c597.chunk.css.map": "/PortfolioSocialeNetwork/static/css/3.fbc4c597.chunk.css.map",
     "static/css/4.2ed7032e.chunk.css.map": "/PortfolioSocialeNetwork/static/css/4.2ed7032e.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.53bbf036.js",
     "static/js/2.ddc3f074.chunk.js",
     "static/css/main.1317f50f.chunk.css",
-    "static/js/main.cad10a19.chunk.js"
+    "static/js/main.cd56ffa0.chunk.js"
   ]
 }
